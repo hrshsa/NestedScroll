@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <blog.csdn.net.mchenys.nestedscrolling.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ddddff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="标题"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <blog.csdn.net.mchenys.nestedscrolling.NestedScrollWebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_bar"></blog.csdn.net.mchenys.nestedscrolling.NestedScrollWebView>
+
+
+    </blog.csdn.net.mchenys.nestedscrolling.TitleBar>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ccffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="评论"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
